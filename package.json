@@ -1,6 +1,6 @@
 {
   "name": "antispambotjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Converts selected email addresses characters to HTML entities to block spam bots.",
   "main": "./lib/index.js",
   "scripts": {
