@@ -1,0 +1,45 @@
+{
+  "name": "antispambotjs",
+  "version": "0.0.2",
+  "description": "Converts selected email addresses characters to HTML entities to block spam bots.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "npm run build:babel",
+    "build:babel": "babel -d lib/ src/",
+    "prepublish": "npm run build",
+    "test": "npm run build && mocha --compilers js:babel-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viktor777/antispambotjs.git"
+  },
+  "keywords": [
+    "anti",
+    "spam",
+    "bot",
+    "email",
+    "obfuscate",
+    "antispambot",
+    "antispambotjs",
+    "wordpress",
+    "wp"
+  ],
+  "author": "Viktor Kuliebiakin <kuliebiakin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Viktor777/antispambotjs/issues"
+  },
+  "homepage": "https://github.com/Viktor777/antispambotjs#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "chai": "^3.5.0",
+    "html-entities": "^1.2.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "clamp": "^1.0.1",
+    "left-pad": "^1.1.3",
+    "random-int": "^1.0.0"
+  }
+}
